@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunrise Hotel — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Sunrise Hotel logo"><span>Sunrise Hotel</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Facilities</a></li>
+          <li><a href="dining.html">Dining & Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Welcome to Sunrise Hotel</h1>
+        <p>Your comfort, our sunshine. Enjoy modern rooms, delicious dining, and relaxing facilities.</p>
+        <a class="cta book-btn" data-room="General Booking" href="#!" role="button">Book Now</a>
+      </div>
+    </section>
+
+    <!-- Featured Rooms -->
+    <div class="container">
+      <section id="featured-rooms" aria-labelledby="featured-title">
+        <div class="section-title"><h2 id="featured-title">Featured Rooms & Suites</h2></div>
+        <div class="cards">
+          <article class="card">
+            <img src="images/room-deluxe.png" alt="Deluxe Room">
+            <div class="card-body">
+              <h3>Deluxe Room</h3>
+              <p>Comfortable queen bed, free Wi-Fi, city view.</p>
+              <p class="room-price">LKR 8,000 – 12,000 / night</p>
+              <button class="book-btn" data-room="Deluxe Room">Book Now</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/room-suite.png" alt="Suite">
+            <div class="card-body">
+              <h3>Suite</h3>
+              <p>Spacious suite with living area and panoramic windows.</p>
+              <p class="room-price">LKR 18,000 – 25,000 / night</p>
+              <button class="book-btn" data-room="Suite">Book Now</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/room-family.png" alt="Family Room">
+            <div class="card-body">
+              <h3>Family Room</h3>
+              <p>Two double beds, ideal for families.</p>
+              <p class="room-price">LKR 12,000 – 16,000 / night</p>
+              <button class="book-btn" data-room="Family Room">Book Now</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Offers -->
+      <section id="offers">
+        <div class="section-title"><h2>Special Offers</h2></div>
+        <div class="card" style="padding:1rem;">
+          <h3>September Stay & Dine</h3>
+          <p>Book 2 nights and get 20% off dining at our restaurant. Offer valid through the month.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Booking Modal -->
+  <div id="booking-modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modal-close" aria-label="Close">✕</button>
+      <h3>Book a Room</h3>
+      <form id="booking-form">
+        <label>Room <input id="booking-room" name="room" readonly></label>
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Check-in <input name="checkin" type="date"></label>
+        <label>Nights <input name="nights" type="number" min="1" value="1"></label>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Sunrise Hotel</h4>
+        <p>123 Sunrise Ave, Colombo</p>
+        <p>Phone: +94 11 123 4567</p>
+        <p>Email: info@sunrisehotel.example</p>
+      </div>
+      <div>
+        <h4>Quick Contact</h4>
+        <form id="footer-contact-form" class="small-form">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div>
+        <h4>Subscribe</h4>
+        <form id="subscribe-form" class="small-form">
+          <input name="newsletter-email" type="email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
