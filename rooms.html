@@ -23,3 +23,126 @@
       </nav>
     </div>
   </header>
+
+<main class="container">
+    <h1>Rooms & Facilities</h1>
+
+    <section aria-labelledby="rooms-list">
+      <h2 id="rooms-list">Our Rooms</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/room-deluxe.png" alt="Deluxe Room image">
+          <div class="card-body">
+            <h3>Deluxe Room</h3>
+            <p>Comfortable queen bed, free Wi-Fi, city view.</p>
+            <p class="room-price">LKR 8,000 / night</p>
+            <button class="book-btn" data-room="Deluxe Room">Book Now</button>
+          </div>
+        </article>
+
+
+          <article class="card">
+          <img src="images/room-suite.png" alt="Suite image">
+          <div class="card-body">
+            <h3>Suite</h3>
+            <p>Spacious suite with living area and panoramic windows.</p>
+            <p class="room-price">LKR 20,000 / night</p>
+            <button class="book-btn" data-room="Suite">Book Now</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/room-family.png" alt="Family room image">
+          <div class="card-body">
+            <h3>Family Room</h3>
+            <p>Two double beds, ideal for families.</p>
+            <p class="room-price">LKR 12,000 / night</p>
+            <button class="book-btn" data-room="Family Room">Book Now</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/room-standard.png" alt="Standard room image">
+          <div class="card-body">
+            <h3>Standard Room</h3>
+            <p>Cozy room with queen bed and essential amenities.</p>
+            <p class="room-price">LKR 6,000 / night</p>
+            <button class="book-btn" data-room="Standard Room">Book Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="facilities">
+      <h2 id="facilities">Hotel Facilities</h2>
+      <div class="facilities">
+        <div class="facility">
+          <img src="images/pool.png" alt="Swimming pool" style="width:100%;height:100px;object-fit:cover;border-radius:6px">
+          <h4>Swimming Pool</h4>
+          <p>Outdoor heated pool with poolside bar.</p>
+        </div>
+        <div class="facility">
+          <img src="images/gym.png" alt="Gym equipment" style="width:100%;height:100px;object-fit:cover;border-radius:6px">
+          <h4>Gym</h4>
+          <p>24/7 fitness center with modern machines.</p>
+        </div>
+        <div class="facility">
+          <img src="images/restaurant.png" alt="Restaurant" style="width:100%;height:100px;object-fit:cover;border-radius:6px">
+          <h4>Restaurant</h4>
+          <p>All-day dining with local and international cuisine.</p>
+        </div>
+        <div class="facility">
+          <img src="images/spa.png" alt="Spa" style="width:100%;height:100px;object-fit:cover;border-radius:6px">
+          <h4>Spa</h4>
+          <p>Full-service spa with massage and wellness treatments.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- booking modal included for reusability -->
+  <div id="booking-modal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modal-close" aria-label="Close">✕</button>
+      <h3>Book a Room</h3>
+      <form id="booking-form">
+        <label>Room <input id="booking-room" name="room" readonly></label>
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Sunrise Hotel</h4>
+        <p>123 Sunrise Ave, Colombo</p>
+        <p>+94 11 123 4567</p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+      </div>
+
+      <div>
+        <h4>Quick Contact</h4>
+        <form id="footer-contact-form" class="small-form">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div>
+        <h4>Subscribe</h4>
+        <form id="subscribe-form" class="small-form">
+          <input name="newsletter-email" type="email" placeholder="you@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
