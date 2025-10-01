@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dining & Services — Sunrise Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Sunrise Hotel logo"><span>Sunrise Hotel</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Facilities</a></li>
+          <li><a class="active" href="dining.html">Dining & Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Dining & Services</h1>
+
+    <section aria-labelledby="dining">
+      <h2 id="dining">Our Restaurant, Café & Bar</h2>
+      <div class="card" style="margin-bottom:1rem;">
+        <img src="images/restaurant.png" alt="Restaurant interior" style="width:100%;height:200px;object-fit:cover">
+        <div class="card-body">
+          <h3>Sunrise Restaurant</h3>
+          <p>Open for breakfast, lunch and dinner with a seasonal menu.</p>
+        </div>
+      </div>
+
+      <h3>Menu highlights</h3>
+      <div class="cards">
+        <article class="card">
+          <img src="images/Grilled prawns.png" alt="Grilled prawns">
+          <div class="card-body">
+            <h4>Grilled Prawns</h4>
+            <p>Local spices, served with coconut rice.</p>
+            <p class="room-price">LKR 1,700</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/Kottu fresh.png" alt="Kottu fresh">
+          <div class="card-body">
+            <h4>Signature Kottu</h4>
+            <p>Fresh vegetables and choice of chicken/beef.</p>
+            <p class="room-price">LKR 900</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/Tropical smoothie.png" alt="Tropical smoothie">
+          <div class="card-body">
+            <h4>Tropical Smoothie</h4>
+            <p>Blend of local fruits — mango, papaya, pineapple.</p>
+            <p class="room-price">LKR 450</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="services">
+      <h2 id="services">Other Services</h2>
+      <ul>
+        <li>Airport shuttle (pre-book required)</li>
+        <li>24-hour room service</li>
+        <li>Event hosting & conference facilities</li>
+        <li>Laundry and dry cleaning</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Sunrise Hotel</h4>
+        <p>123 Sunrise Ave, Colombo</p>
+        <p>+94 11 123 4567</p>
+      </div>
+      <div>
+        <form id="footer-contact-form" class="small-form">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div>
+        <form id="subscribe-form" class="small-form">
+          <input name="newsletter-email" type="email" placeholder="you@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
