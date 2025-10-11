@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Testimonials — Sunrise Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Sunrise Hotel logo"><span>Sunrise Hotel</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Facilities</a></li>
+          <li><a href="dining.html">Dining & Services</a></li>
+          <li><a class="active" href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Guest Testimonials</h1>
+
+    <section aria-labelledby="testimonials-list">
+      <div class="testimonial">
+        <h3>Anna Perera</h3>
+        <p><em>"Lovely stay — great service and delicious food."</em></p>
+        <p>Date: <time datetime="2025-08-12">12 August 2025</time></p>
+        <figure>
+          <video controls width="100%" src="media/testimonial.mp4">Your browser does not support video tag.</video>
+          <figcaption>Anna's stay highlights (video).</figcaption>
+        </figure>
+        <figure>
+          <audio controls src="media/testimonial1.mp3">Your browser does not support audio.</audio>
+          <figcaption>Audio review.</figcaption>
+        </figure>
+        <label><input type="checkbox" name="enjoyed1"> Did you enjoy your stay with us?</label>
+      </div>
+
+      <div class="testimonial" style="margin-top:1rem;">
+        <h3>Michael Jay</h3>
+        <p><em>"Great facilities and comfortable rooms."</em></p>
+        <p>Date: <time datetime="2025-07-05">05 July 2025</time></p>
+        <figure>
+          <video controls width="100%" src="media/testimonial.mp4"></video> 
+          <figcaption>Michael's stay vignette (video).</figcaption>
+        </figure>
+        <figure>
+          <audio controls src="media/testimonial2.mp3"></audio>
+          <figcaption>Audio review.</figcaption>
+        </figure>
+        <label><input type="checkbox" name="enjoyed2"> Did you enjoy your stay with us?</label>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Sunrise Hotel</h4>
+        <p>123 Sunrise Ave, Colombo</p>
+        <p>+94 11 123 4567</p>
+      </div>
+
+      <div>
+        <h4>Quick Contact</h4>
+        <form id="footer-contact-form" class="small-form">
+          <input name="name" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div>
+        <h4>Subscribe</h4>
+        <form id="subscribe-form" class="small-form">
+          <input name="newsletter-email" type="email" placeholder="you@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
